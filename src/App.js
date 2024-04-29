@@ -7,10 +7,7 @@ import CartContextProvider from './store/shopping-cart-context.jsx';
 function App() {
   return (
     <CartContextProvider>
-      <Header
-        cart={shoppingCart}
-        onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
-      />
+      <Header />
       <Shop > 
         {DUMMY_PRODUCTS.map((product) => (
           <li key={product.id}>
